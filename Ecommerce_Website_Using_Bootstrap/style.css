@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family:  "Ojuju", sans-serif;
+}
+    
+.navbar-brand:hover{
+    color:black;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border: 2px solid rgb(210, 10, 10);
+}
+
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background-color: rgb(210, 10, 10);
+    color: white;
+    font-weight: 700;
+}
+
+.main{
+    background: url(https://vegeda-store-demo.myshopify.com/cdn/shop/files/slide1.1.jpg?v=1613554264)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: 50% 50%;
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color:rgb(210, 10, 10);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.col-lg-4 img{
+    height: 100px;
+    width: 100px; 
+}
+
+.btn1:hover{
+    background-color: rgb(253, 2, 2);
+    transition: 0.5s;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.card:hover{
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+transition: 0.5s;
+}
+
+.apple{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://c.ndtvimg.com/2018-11/1k56u71g_breakfast_625x300_18_November_18.jpg)no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.apple h1{
+    font-family:  "Ojuju", sans-serif;
+}
+
+.news{
+    background-color: black;
+    color: white;
+}
+
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 400;
+}
+
+.news input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.news::placeholder{
+    color: white;
+}
+
+.news p{
+    margin: 0; 
+}
+
+.fab{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}

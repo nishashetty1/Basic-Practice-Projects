@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | LinkedIn</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(242, 242, 242);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .logo img {
+            height: 40px;
+            margin: 20px;
+        }
+
+        p {
+            font-size: 35px;
+            text-align: center;
+            font-weight: 100;
+            color: #2a2a2a;
+        }
+
+        .card {
+            background-color: white;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        label {
+            font-size: 15px;
+            margin: 10px 0;
+            font-weight: 600;
+            color: rgb(79, 75, 75);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(179, 179, 179);
+        }
+
+        .sent p {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .sent a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #0a66c2;
+        }
+
+        button {
+            padding: 15px;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: #0a66c2;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        .or {
+            text-align: center;
+            margin: 20px 0;
+            color: rgb(160, 157, 157);
+        }
+
+        .google a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.6);
+            border-radius: 25px;
+            text-decoration: none;
+            color: #0a66c2;
+        }
+
+        .google img {
+            height: 22px;
+            margin-right: 10px;
+        }
+
+        .sign {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .sign a {
+            padding: 0;
+            margin: 0;
+            color: #0a66c2;
+            font-size: 18px;
+        }
+
+        .look {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+        }
+
+        .look a {
+            padding: 0;
+            margin: 0;
+            color: #0a66c2;
+            font-size: 13.5px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+
+        footer a {
+            color: #0a66c2;
+            text-decoration: none;
+        }
+
+        footer .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        footer .nav li {
+            list-style: none;
+        }
+
+        footer .nav select {
+            border: none;
+            background-color: transparent;
+            font-size: 12px;
+            color: grey;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="images/logo.png" alt="LinkedIn Logo" />
+    </div>
+
+    <p>Make the most of your professional life</p>
+
+    <!-- Sign Up Form -->
+    <div class="card">
+        <form action="submit" method="post">
+            <!-- Email Field -->
+            <label for="email">Email or Phone Number:</label>
+            <input type="text" id="email" name="email" required />
+
+            <!-- Password Field -->
+            <label for="pass">Password (6+ characters)</label>
+            <input type="password" id="pass" name="pass" required />
+
+            <!-- Legal Agreement -->
+            <div class="sent">
+                <p>
+                    By clicking Agree & Join, you agree to the LinkedIn
+                    <a href="#">User Agreement</a>, 
+                    <a href="#">Privacy Policy</a>, and 
+                    <a href="#">Cookie Policy</a>.
+                </p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="agree">Agree & Join</button>
+        </form>
+
+        <!-- Alternative Sign In Option -->
+        <div class="or">or</div>
+
+        <!-- Google Sign In -->
+        <div class="google">
+            <a href="https://www.google.com">
+                <img src="images/google.png" alt="Google Logo" />
+                Continue with Google
+            </a>
+        </div>
+
+        <!-- Sign In Link -->
+        <div class="sign">
+            Already on LinkedIn? <a href="#">Sign in</a>
+        </div>
+    </div>
+
+    <!-- Looking for Business Page Link -->
+    <div class="look">
+        Looking to create a page for a business? <a href="#">Get help</a>
+    </div>
+
+    <!-- Footer with Links -->
+    <footer>
+        <p>&copy; 2023 LinkedIn Corporation</p>
+        <ul class="nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">User Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Copyright Policy</a></li>
+            <li><a href="#">Brand Policy</a></li>
+            <li><a href="#">Guest Controls</a></li>
+            <li><a href="#">Community Guidelines</a></li>
+            <li>
+                <select id="lang">
+                    <option value="volvo">Language</option>
+                    <option value="saab">English</option>
+                    <option value="saab">Hindi</option>
+                    <option value="opel">Malayalam</option>
+                    <option value="audi">Kannada</option>
+                </select>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
